@@ -3,7 +3,7 @@
         <div class="item-card">
             <div class="card-block">
                 <h4 class="card-title">{{item.name}}</h4>
-                <div v-for="(value, key, index) in item">
+                <div v-for="(value, key, index) in item" :key="key.id">
                     <div v-if="index < 5">
                         <strong>{{key}}</strong>: {{value}}
                     </div>
