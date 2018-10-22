@@ -5,9 +5,9 @@
     <button class="btn btn-primary" @click="initJokes">Add ten random jokes</button>
     <br>
     <span v-for="(type, index) in types" :key="index">
-      <input 
-      type="checkbox" 
-      :value="type" 
+      <input
+      type="checkbox"
+      :value="type"
       v-model="checkedTypes"
       checked>
       <label>{{type}}</label>&nbsp;
